@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, InstagramIcon } from "lucide-react";
 
 export const DATA = {
   name: "Reynald Faidzilah Ahmad",
@@ -27,10 +27,7 @@ export const DATA = {
     "GSAP",
     "Three.js",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "hello@example.com",
     tel: "+123456789",
@@ -54,13 +51,14 @@ export const DATA = {
         url: "#",
         icon: Icons.x,
 
-        navbar: true,
+        navbar: false,
       },
       Youtube: {
         name: "Youtube",
         url: "#",
         icon: Icons.youtube,
-        navbar: true,
+
+        navbar: false,
       },
       email: {
         name: "Send Email",
@@ -68,6 +66,13 @@ export const DATA = {
         icon: Icons.email,
 
         navbar: false,
+      },
+      instagram: {
+        name: "Instagram",
+        url: "https://dub.sh/reynald-instagram",
+        icon: InstagramIcon,
+
+        navbar: true,
       },
     },
   },
@@ -120,6 +125,8 @@ export const DATA = {
       logoUrl: "/binar.jpg",
       start: "Sep 2022",
       end: "Mar 2023",
+      description:
+        "A dedicated Fullstack Web Developer with hands-on experience in frontend and backend technologies, gained through an intensive bootcamp. Proficient in building responsive and high-performing web applications, from UI/UX design to database management. Passionate about problem-solving and continuously refining skills to contribute to innovative tech solutions.",
     },
     {
       school: "Dicoding",
@@ -128,6 +135,8 @@ export const DATA = {
       logoUrl: "/dicoding.jpg",
       start: "Aug 2022",
       end: "Oct 2022",
+      description:
+        "Completed an intensive online education program at Dicoding, specializing in frontend and backend web development. Gained expertise in React.js for crafting interactive user interfaces and managing application state, along with a strong understanding of backend technologies, including servers and databases. Applied knowledge through diverse projects, building a solid foundation in fullstack development. Passionate about continuous learning and contributing to innovative tech solutions.",
     },
   ],
   projects: [
@@ -254,387 +263,213 @@ export const DATA = {
         "https://firebasestorage.googleapis.com/v0/b/np-v1-b94f5.appspot.com/o/video%2FScreen%20Recording%202025-03-13%20at%2010.03.24.mov?alt=media&token=754e7128-878d-454e-90c8-9d77a5fd6685",
     },
   ],
-  hackathons: [
+  certificates: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "Problem Solving (Basic) Certificate",
+      dates: "18 Mar 2025",
+      location: "from Hackerrank",
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+        "It covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching).",
+      image: "/hackerrank.png",
       links: [
         {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.hackerrank.com/certificates/f189033f25a8",
         },
       ],
     },
     {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
-      description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
+      title: "Frontend Developer (React) Certificate",
+      dates: "29 Oct 2024",
+      location: "from Hackerrank",
+      description: "It covers topics like React, CSS, and JavaScript.",
+      image: "/hackerrank.png",
       links: [
         {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.hackerrank.com/certificates/83f72a86f6e7",
         },
       ],
     },
     {
-      title: "ETH Waterloo",
-      dates: "October 13th - 15th, 2017",
-      location: "Waterloo, Ontario",
+      title: "React (Basic) Certificate",
+      dates: "29 Oct 2024",
+      location: "from Hackerrank",
       description:
-        "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
+        "React (Basic) It covers topics like Basic Routing, Rendering Elements,State Management (Internal Component State), Handling Events, ES6 and JavaScript and Form Validation.",
+      image: "/hackerrank.png",
       links: [
         {
-          title: "Organization",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ethdocnet",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.hackerrank.com/certificates/b9df7b3321b1",
         },
       ],
     },
     {
-      title: "Hack The North",
-      dates: "September 15th - 17th, 2017",
-      location: "Waterloo, Ontario",
+      title: "Fullstack Developer Certificate",
+      dates: "5 Apr 2023",
+      location: "from Binar Academy",
       description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+        "Has Successfully Completed Binar Academy Bootcamp Fullstack Developer Program.",
+      image: "/binar.jpg",
       links: [
         {
-          title: "Streamer Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/htn2017",
-        },
-        {
-          title: "Client Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/RTSPClient",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://drive.google.com/file/d/1LYPRdRNuR2mdRAXmANWVcw9jhEEiCecp/view",
         },
       ],
     },
     {
-      title: "Hack The 6ix",
-      dates: "August 26th - 27th, 2017",
-      location: "Toronto, Ontario",
+      title: "Bootcamp Final Report",
+      dates: "5 Apr 2023",
+      location: "from Binar Academy",
       description:
-        "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+        "My final report from Binar Academy Bootcamp Fullstack Developer Program.",
+      image: "/binar.jpg",
       links: [
         {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ShareShip/ShareShip",
-        },
-        {
-          title: "Site",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://share-ship.herokuapp.com/",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://drive.google.com/file/d/1BnNquzl56yXxXn7mXe616Q-xO3XmAzib/view",
         },
       ],
     },
     {
-      title: "Stupid Hack Toronto",
-      dates: "July 23rd, 2017",
-      location: "Toronto, Ontario",
+      title: "Beginner Back-End Certificate",
+      dates: "27 Mar 2023",
+      location: "from Dicoding",
       description:
-        "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
+        "This course introduces back-end development with Javascript, covering Node.js fundamentals, RESTful API creation, deployment on Amazon EC2, and API testing with Postman.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/nsagirlfriend/nsagirlfriend",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/6RPNW3K25P2M",
         },
       ],
     },
     {
-      title: "Global AI Hackathon - Toronto",
-      dates: "June 23rd - 25th, 2017",
-      location: "Toronto, Ontario",
+      title: "Front-End Web Beginners Certificate",
+      dates: "12 Sep 2022",
+      location: "from Dicoding",
       description:
-        "Developed a python library which can be imported to any python game and change difficulty of the game based on real time emotion of player. Uses OpenCV and webcam for facial recognition, and a custom Machine Learning Model trained on a [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) using [Tensorflow](https://www.tensorflow.org/Tensorflow) and [Keras](https://keras.io/). This project recieved 1st place prize at the Global AI Hackathon - Toronto and was also invited to demo at [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
-      win: "1st Place Winner",
+        "This course covers the Browser Object Model (BOM) and Document Object Model (DOM), focusing on JavaScript manipulation. It also explores event handling for interactivity and web storage APIs for data persistence.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://syncedreview.com/2017/06/26/global-ai-hackathon-in-toronto/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/TinySamosas/",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/QLZ9KMLGEZ5D",
         },
       ],
     },
     {
-      title: "McGill AI for Social Innovation Hackathon",
-      dates: "June 17th - 18th, 2017",
-      location: "Montreal, Quebec",
+      title: "Web Programming Basics Certificate",
+      dates: "6 Sep 2022",
+      location: "from Dicoding",
       description:
-        "Developed realtime facial microexpression analyzer using AI",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
-      links: [],
-    },
-    {
-      title: "Open Source Circular Economy Days Hackathon",
-      dates: "June 10th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-      win: "1st Place Winner",
+        "This course introduces website development, covering client-server concepts, HTML for structuring content, and CSS for styling. It delves into advanced HTML elements, semantic structuring, and in-depth CSS techniques like selectors, box model, positioning, and media queries. Responsive design using Flexbox is also explored, culminating in a hands-on website project.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/genecis",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/NVP7K2JDOZR0",
         },
       ],
     },
     {
-      title: "Make School's Student App Competition 2017",
-      dates: "May 19th - 21st, 2017",
-      location: "International",
-      description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
-      win: "Top 10 Finalist | Honourable Mention",
+      title: "Web Application (Basics) with React Certificate",
+      dates: "6 Des 2022",
+      location: "from Dicoding",
+      description:
+        "This course introduces React, its ecosystem, and core concepts like composition, declarative code, and unidirectional data flow. It covers building reusable UI components, component properties, and managing state using class components and controlled components.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Medium Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
-        },
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/1RXYO158QPVM",
         },
       ],
     },
     {
-      title: "HackMining",
-      dates: "May 12th - 14th, 2017",
-      location: "Toronto, Ontario",
-      description: "Developed neural network to optimize a mining process",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-      links: [],
-    },
-    {
-      title: "Waterloo Equithon",
-      dates: "May 5th - 7th, 2017",
-      location: "Waterloo, Ontario",
+      title: "Web Application (Fundamentals) with React Certificate",
+      dates: "15 Des 2022",
+      location: "from Dicoding",
       description:
-        "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
+        "This course covers essential React concepts, including prop validation with PropTypes, client-side routing with React Router, and lifecycle methods for handling asynchronous processes. It also explores global state management with React Context and writing cleaner functional components using React Hooks.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
-        },
-        {
-          title: "YouTube",
-          icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/EYX49VM1JPDL",
         },
       ],
     },
     {
-      title: "SpaceApps Waterloo",
-      dates: "April 28th - 30th, 2017",
-      location: "Waterloo, Ontario",
+      title: "JavaScript Programming Basics Certificate",
+      dates: "15 Des 2022",
+      location: "from Dicoding",
       description:
-        "Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
+        "This course introduces JavaScript fundamentals, covering variables, data structures, functions, and programming paradigms like OOP and functional programming. It explores modules, error handling, concurrency, and setting up a development environment with Node.js. Additional topics include managing dependencies with NPM and JavaScript testing for code reliability.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/earthwatch",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/81P28NDWYPOY",
         },
       ],
     },
     {
-      title: "MHacks 9",
-      dates: "March 24th - 26th, 2017",
-      location: "Ann Arbor, Michigan",
+      title: "Programming Logic 101 Certificate",
+      dates: "18 Jan 2023",
+      location: "from Dicoding",
       description:
-        "Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+        "This course introduces basic programming logic, logic gates, and computational thinking techniques like decomposition, pattern recognition, abstraction, and algorithm writing. It concludes with real-world applications of programming logic.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/threejs-planes",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/JLX1L5926X72",
         },
       ],
     },
     {
-      title: "StartHacks I",
-      dates: "March 4th - 5th, 2017",
-      location: "Waterloo, Ontario",
+      title: "Git with GitHub Certificate",
+      dates: "18 Jan 2023",
+      location: "from Dicoding",
       description:
-        "Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
-      win: "1st Place Winner",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+        "This course covers Git and GitHub fundamentals, including repository management, branching, merging, and resolving conflicts. It also explores team collaboration, handling pull requests, and using GitHub as a portfolio to showcase projects.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-ionic",
-        },
-        {
-          title: "Source (Server)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-rails",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/MEPJK2Q56X3V",
         },
       ],
     },
     {
-      title: "QHacks II",
-      dates: "February 3rd - 5th, 2017",
-      location: "Kingston, Ontario",
+      title: "Fundamental Front-End WebCertificate",
+      dates: "16 Feb 2023",
+      location: "from Dicoding",
       description:
-        "Developed a mobile game which enables city-wide manhunt with random lobbies",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+        "This course covers ECMAScript 6 features, reusable web components, and managing dependencies with NPM. It also explores module bundlers for optimizing web apps and handling asynchronous data requests using Fetch API.",
+      image: "/dicoding.jpg",
       links: [
         {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/human-huntr-react-native",
-        },
-        {
-          title: "Source (API)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/human-huntr-rails",
-        },
-      ],
-    },
-    {
-      title: "Terrible Hacks V",
-      dates: "November 26th, 2016",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-        },
-      ],
-    },
-    {
-      title: "Portal Hackathon",
-      dates: "October 29, 2016",
-      location: "Kingston, Ontario",
-      description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
+          title: "See Certificate",
+          icon: <Icons.link className="h-4 w-4" />,
+          href: "https://www.dicoding.com/certificates/4EXG9JORQZRL",
         },
       ],
     },
