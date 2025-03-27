@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: DATA.description,
     url: DATA.url,
     siteName: `${DATA.name}`,
-    locale: "en_US",
+    locale: "id_ID",
     type: "website",
   },
   robots: {
