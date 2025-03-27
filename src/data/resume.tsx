@@ -4,7 +4,7 @@ import { HomeIcon, InstagramIcon } from "lucide-react";
 export const DATA = {
   name: "Reynald Faidzilah Ahmad",
   initials: "RF",
-  url: "https://dillion.io",
+  url: "https://hello-reynald.vercel.app/",
   location: "Magetan, Indonesia",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
