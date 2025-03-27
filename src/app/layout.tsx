@@ -70,7 +70,7 @@ export default function RootLayout({
         <meta name="author" content={DATA.name} />
         <meta
           name="keywords"
-          content="Frontend Developer, React, Next.js, JavaScript, TypeScript"
+          content="Reynald, Reynald Faidzilah Ahmad, Frontend Developer, React, Next.js, JavaScript, TypeScript"
         />
         <link rel="canonical" href={DATA.url} />
         <meta property="og:image" content={`${DATA.url}/og-image.jpeg`} />
