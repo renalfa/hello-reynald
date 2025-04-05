@@ -141,6 +141,37 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "CarePulse",
+      href: "https://care-pulse-wheat.vercel.app/",
+      dates: "Apr 2025",
+      active: true,
+      description:
+        "A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Appwrite",
+        "Shadcn UI",
+        "Twilio",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://care-pulse-wheat.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/renalfa/care-pulse",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/mock-test-b4d31.appspot.com/o/Cover.png?alt=media&token=7ce8594c-0ef8-4ae9-a582-07acca1cdb9b",
+      video: "",
+    },
+    {
       title: "Ethereal",
       href: "https://ethereal-sigma.vercel.app/",
       dates: "Jan 2025",
