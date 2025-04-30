@@ -79,6 +79,17 @@ export const DATA = {
 
   work: [
     {
+      company: "Fleetify.id",
+      badges: [],
+      href: "https://www.fleetify.id/",
+      location: "Foresta Business Loft 5, Tangerang",
+      title: "Frontend Developer",
+      logoUrl: "/fleetify.jpeg",
+      start: "May 2025",
+      end: "Now",
+      description: "build user-friendly web interfaces with Vanilla JavaScript, collaborate with cross-functional teams, and apply the latest web trends to improve project quality.",
+    },
+    {
       company: "HaluApp",
       badges: [],
       href: "https://halu.app/",
@@ -86,7 +97,7 @@ export const DATA = {
       title: "Frontend Developer",
       logoUrl: "/haluapp.png",
       start: "Feb 2024",
-      end: "Now",
+      end: "May 2025",
       description:
         "Focus on integrating RESTful APIs, optimizing performance, and ensuring code maintainability. Proficient in debugging critical issues, implementing unit tests with Jest, and enhancing UI/UX using Tailwind CSS. Successfully integrated Xendit payment gateway for secure transactions, contributing to seamless user interactions and application stability.",
     },
@@ -169,6 +180,32 @@ export const DATA = {
       ],
       image:
         "https://firebasestorage.googleapis.com/v0/b/mock-test-b4d31.appspot.com/o/Cover.png?alt=media&token=7ce8594c-0ef8-4ae9-a582-07acca1cdb9b",
+      video: "",
+    },
+    {
+      title: "Gudang Regulasi",
+      href: "https://gudangregulasi.com/",
+      dates: "Mar 2025",
+      active: true,
+      description:
+        "GudangRegulasi is a regulation search and download platform with free and premium features. It supports Google login and includes an admin dashboard to upload and manage regulation files.",
+      technologies: [
+        "React.js",
+        "Typescript",
+        "TailwindCSS",
+        "Zustand",
+        "Three.js",
+        "Midtrans Payment Gateway",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://gudangregulasi.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image:
+        "https://firebasestorage.googleapis.com/v0/b/mock-test-b4d31.appspot.com/o/Screenshot%202025-04-29%20at%2017.38.18.jpg?alt=media&token=66a220a3-53a7-4741-b325-1455be58e90e",
       video: "",
     },
     {
